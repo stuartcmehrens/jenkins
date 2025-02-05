@@ -13,7 +13,6 @@ pipeline {
             when {
                 allOf {
                     branch 'main'
-                    }
                     anyOf {
                         triggeredBy 'TimerTrigger'
                         triggeredBy cause: "UserIdCause"
